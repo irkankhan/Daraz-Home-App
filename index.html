@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .slick-prev {
+            left: 15px;
+            z-index: 2;
+        }
+
+        .slick-next {
+            right: 15px;
+        }
+
+        .slick-dots {
+            bottom: 15px;
+        }
+        .slick-dots li.slick-active button:before{
+            color: white;
+        }
+        .slick-dots li button:before{
+            color: white;
+            font-size: 12px;
+        }
+        .slick-dots li{
+            margin: -1px;
+        }
+    </style>
+</head>
+
+<body class="min-w-[360px]">
+    <nav class="bg-orange-500 justify-center text-white py-2">
+        <div class="container block mx-auto xl:px-24">
+            <div class="px-10 flex flex-col gap-3">
+                <ul class="md:flex hidden lg:justify-end md:justify-center px-4 gap-4 text-sm">
+                    <li>SAVE MORE ON APP</li>
+                    <li>SELL ON DARAZ</li>
+                    <li>HELP AND SUPPORT</li>
+                    <li>LOGIN</li>
+                    <li>SIGN UP</li>
+                </ul>
+                <div class="flex items-center justify-center md:gap-5 w-full">
+                    <img src="https://lzd-img-global.slatic.net/us/domino/3b870cb043c7f8a9741cbf66329e294e.png"
+                        class="md:w-28 w-28" alt="">
+                    <div class="flex md:gap-4 gap-2 md:w-1/2 w-full">
+                        <div class="w-full flex items-center bg-[#ffe1d2]">
+                            <input type="text" placeholder="Search in daraz"
+                                class="w-full py-2 px-4 h-10 outline-none text-gray-700" />
+                            <i class="ri-search-line text-2xl px-2 text-red-400"></i>
+                        </div>
+                        <i class="ri-shopping-cart-line text-4xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container block mx-auto xl:px-24">
+            <div class="grid grid-flow-col grid-cols-5">
+                <div class="container xl:col-span-5">
+                    <div class="responsive">
+                        <div>
+                            <img src="photos/f1.jpg" alt="Los Angeles" style="width:100%">
+                        </div>
+                        <div>
+                            <img src="photos/f1.jpg" alt="Los Angeles" style="width:100%">
+                        </div>
+                        <div>
+                            <img src="photos/f1.jpg" alt="Los Angeles" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container block mx-auto xl:px-24 px-6">
+            <div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 py-10 gap-4 justify-center">
+                <div class=" bg-white">
+                    <img src="photos/1.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Air-ports Wireless Earbuds Bluetooth 5.0..</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/2.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">3D Mirror Wall Sticker Hexagon Shape With..</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/3.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Collar Mic 3.5mm Stereo MIC For Mobile not ... </span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/4.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Oks T900 Series 8T900 Pro Ultra Smart Watch...</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <img src="photos/5.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Air-ports i12&i7s Wireless Earbuds</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <div class="">
+                        <img src="photos/6.jpg" class="" alt="">
+                        <span class="flex">120W Cable One Two Three Suitable For</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container block mx-auto xl:px-24 px-6 py-4">
+            <div class="grid lg:grid-cols-8 md:grid-cols-4 grid-cols-3">
+                <div class="bg-white flex flex-col items-center lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/11.jpg" class="w-20" alt="">
+                    <p class="text-center">Messenger Bags</p>
+                </div>
+                <div class="bg-white flex flex-col items-center lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/12.jpg" class="w-20" alt="">
+                    <p class="text-center">Sunglasses</p>
+                </div>
+                <div class="bg-white flex flex-col items-center lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/13.png" class="w-20" alt="">
+                    <p class="text-center">Mobile</p>
+                </div>
+                <div class="bg-white flex flex-col items-center lg:border-r lg:border-solid lg:border-black py-4 ">
+                    <img src="photos/14.jpg" class="w-20" alt="">
+                    <p class="text-center">Tote Bag</p>
+                </div>
+                <div class="bg-white flex flex-col items-center lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/15.jpg" class="w-20" alt="">
+                    <p class="text-center">Dog & cat Beds</p>
+                </div>
+                <div class="bg-white flex flex-col items-center lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/16.jpg" class="w-20" alt="">
+                    <p class="text-center">Tables</p>
+                </div>
+                <div class="bg-white flex flex-col items-center lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/17.jpg" class="w-20" alt="">
+                    <p class="text-center">Starter Kits</p>
+                </div>
+                <div class="bg-white flex flex-col items-center border-solid border-black py-4">
+                    <img src="photos/18.jpg" class="w-20" alt="">
+                    <p class="text-center">Blocks & Building Toys</p>
+                </div>
+                <div
+                    class="bg-white flex flex-col items-center lg:border-t lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/21.jpg" class="w-20" alt="">
+                    <p class="text-center">Knife Sharpners & Blocks</p>
+                </div>
+                <div
+                    class="bg-white flex flex-col items-center lg:border-t lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/22.jpg" class="w-20" alt="">
+                    <p class="text-center">Microphones</p>
+                </div>
+                <div
+                    class="bg-white flex flex-col items-center lg:border-t lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/23.jpg" class="w-20" alt="">
+                    <p class="text-center">Towel Rails & Warmers</p>
+                </div>
+                <div
+                    class="bg-white flex flex-col items-center lg:border-t lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/24.jpg" class="h-20 w-20" alt="">
+                    <p class="text-center">Specialty Cookwear</p>
+                </div>
+                <div
+                    class="bg-white flex flex-col items-center lg:border-t lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/25.jpg" class="w-20" alt="">
+                    <p class="text-center">Zakat</p>
+                </div>
+                <div
+                    class="bg-white flex flex-col items-center lg:border-t lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/26.jpg" class="w-20" alt="">
+                    <p class="text-center">Shower Caddies & Hanger</p>
+                </div>
+                <div
+                    class="bg-white flex flex-col items-center lg:border-t lg:border-r lg:border-solid lg:border-black py-4">
+                    <img src="photos/27.jpg" class="w-20" alt="">
+                    <p class="text-center">Dining Sets</p>
+                </div>
+                <div class="bg-white flex flex-col items-center lg:border-t lg:border-solid lg:border-black py-4">
+                    <img src="photos/28.jpg" class="w-20" alt="">
+                    <p class="text-center">Injury Support and Braces</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container block mx-auto xl:px-24 px-6">
+            <div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 py-4 gap-4 justify-center">
+                <div class=" bg-white">
+                    <img src="photos/1.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Air-ports Wireless Earbuds Bluetooth 5.0..</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/2.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">3D Mirror Wall Sticker Hexagon Shape With..</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/3.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Collar Mic 3.5mm Stereo MIC For Mobile not ... </span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/4.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Oks T900 Series 8T900 Pro Ultra Smart Watch...</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <img src="photos/5.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Air-ports i12&i7s Wireless Earbuds</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <div class="">
+                        <img src="photos/6.jpg" class="" alt="">
+                        <span class="flex">120W Cable One Two Three Suitable For</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 py-2 gap-4 justify-center">
+                <div class=" bg-white">
+                    <img src="photos/1.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Air-ports Wireless Earbuds Bluetooth 5.0..</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/2.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">3D Mirror Wall Sticker Hexagon Shape With..</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/3.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Collar Mic 3.5mm Stereo MIC For Mobile not ... </span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/4.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Oks T900 Series 8T900 Pro Ultra Smart Watch...</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <img src="photos/5.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Air-ports i12&i7s Wireless Earbuds</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <div class="">
+                        <img src="photos/6.jpg" class="" alt="">
+                        <span class="flex">120W Cable One Two Three Suitable For</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 py-4 gap-4 justify-center">
+                <div class=" bg-white">
+                    <img src="photos/1.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Air-ports Wireless Earbuds Bluetooth 5.0..</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/2.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">3D Mirror Wall Sticker Hexagon Shape With..</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/3.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Collar Mic 3.5mm Stereo MIC For Mobile not ... </span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/4.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Oks T900 Series 8T900 Pro Ultra Smart Watch...</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <img src="photos/5.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Air-ports i12&i7s Wireless Earbuds</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <div class="">
+                        <img src="photos/6.jpg" class="" alt="">
+                        <span class="flex">120W Cable One Two Three Suitable For</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 py-2 gap-4 justify-center">
+                <div class=" bg-white">
+                    <img src="photos/1.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Air-ports Wireless Earbuds Bluetooth 5.0..</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/2.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">3D Mirror Wall Sticker Hexagon Shape With..</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/3.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Collar Mic 3.5mm Stereo MIC For Mobile not ... </span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class=" bg-white">
+                    <img src="photos/4.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Oks T900 Series 8T900 Pro Ultra Smart Watch...</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <img src="photos/5.jpg" class="" alt="">
+                    <div class="">
+                        <span class="flex">Air-ports i12&i7s Wireless Earbuds</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <div class="">
+                        <img src="photos/6.jpg" class="" alt="">
+                        <span class="flex">120W Cable One Two Three Suitable For</span>
+                        <span class="text-orange-600 ">Rs.1000</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container py-10 flex justify-center">
+                <button class="w-96 px-4 py-2 border-2 border-blue-400 text-blue-400 ">
+                    Load More
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="container block mx-auto xl:px-24 px-6">
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid:cols-1 py-10">
+                <div class=" pb-2">
+                    <p class="text-lg">Customer Care</p>
+                    <ul class="text-xs">
+                        <li>Help Center</li>
+                        <li>How To Buy</li>
+                        <li>Corporater & Bulk Purchasing</li>
+                        <li>Returns & Refunds</li>
+                        <li>Daraz Shop</li>
+                        <li>Contact Us</li>
+                        <li>Purchase Protection</li>
+                        <li>Daraz Pick Up Point</li>
+                    </ul>
+                </div>
+                <div class="pb-6">
+                    <p class="text-lg">Daraz</p>
+                    <ul class="text-xs">
+                        <li>About Us</li>
+                        <li>Digital Payment</li>
+                        <li>Daraz Donates</li>
+                        <li>Daraz Blag</li>
+                        <li>Terms And Condition</li>
+                        <li>Privicy Police</li>
+                        <li>NTN Number : 4012118-6</li>
+                        <li>STRN Number : 1700401211818</li>
+                        <li>Online Shopping App</li>
+                        <li>Online Grocery Shopping</li>
+                        <li>Daraz Exclusive</li>
+                        <li>Daraz University</li>
+                        <li>Sell on Daraz</li>
+                        <li>Join Daraz Affiliate Program</li>
+                    </ul>
+                </div>
+
+                <div class="flex gap-10 pb-4">
+                    <div class="">
+                        <img src="photos/darazfooter.png" class="" alt="">
+                    </div>
+                    <div class="">
+                        <p class="text-orange-600">Happy Shopping</p>
+                        <p class="text-blue-800">Download App</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex gap-2 ">
+                        <img src="photos/mobile.png" alt="">
+                        <img src="photos/play.png" alt="">
+                    </div>
+                    <div class="my-2">
+                        <img src="photos/app.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-white py-10">
+            <div class="container block mx-auto xl:px-24 sm:flex gap-10 px-6">
+                <div class="">
+                    <div>
+                        <p>Payment Methods</p>
+                    </div>
+                    <div class="flex items-center gap-2 my-2">
+                        <div>
+                            <img src="photos/cashon.png" class="border-gray-500 w-14" alt="">
+                        </div>
+                        <div>
+                            <img src="photos/visa.png" class="border-gray-500 w-14" alt="">
+                        </div>
+                        <div>
+                            <img src="photos/card.png" class="border-gray-500 w-14" alt="">
+                        </div>
+                        <div>
+                            <img src="photos/easy.png" class="border-gray-500 w-14" alt="">
+                        </div>
+                        <div>
+                            <img src="photos/dw.png" class="border-gray-500 w-14" alt="">
+                        </div>
+                        <div>
+                            <img src="photos/jasscash.png" class="border-gray-500 w-14" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <div>
+                            <img src="photos/pay.png" class="border-gray-500 w-14" alt="">
+                        </div>
+                        <div>
+                            <img src="photos/hbl.png" class="border-gray-500 w-14" alt="">
+                        </div>
+                        <div>
+                            <img src="photos/monthaly.png" class="border-gray-500 w-14" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <div>
+                        <p>Verified by</p>
+                    </div>
+                    <div>
+                        <img src="photos/dss.png" class="h-10" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-gray-100 text-gray-800 py-10">
+            <div class="container block mx-auto xl:px-24 px-6">
+                <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-8">
+                    <div>
+                        <h2 class="text-xl font-bold mb-4">How Daraz Transformed Online Shopping in Pakistan</h2>
+                        <h1 class="font-bold text-sm ">How Daraz Transformed Online Shopping in Pakistan</h1>
+                        <p class="text-sm leading-relaxed mb-4">
+                            Daraz first made waves in Pakistan’s e-commerce market after its introduction in 2012. We
+                            have since grown to become Pakistan’s largest platform for online shopping with a network
+                            spread across Asia in Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np. Our vision
+                            was to provide a safe, efficient online marketplace platform for vendors and customers
+                            across the country to come together. We started off exclusively as an online fashion retail
+                            platform and over the years expanded to become a complete one-stop solution for all your
+                            buying needs. Daraz prides itself on not being just another ecommerce venture in Asia. We
+                            work tirelessly to make sure that we provide users with the best online online shopping
+                            experience and value for their purchases. Whether you shop online through our website or our
+                            online shopping mobile App, you can expect easy navigation, customized recommendations, and
+                            a smooth online shopping experience guaranteed
+                        </p>
+                        <h3 class="text-sm font-bold mb-2">What Makes Us Different from Other Online Shopping Platforms?
+                        </h3>
+                        <h1 class="font-bold text-sm text-gray-500">Select from the Largest Online Marketplace in
+                            Pakistan</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            With over 15 million products to select from, Daraz offers its customers the most
+                            comprehensive listing of products in the country. Whether you’re looking for electronics,
+                            apparel, appliances, or groceries – there is something for everyone.
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Hassle Free Delivery</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Online shopping is only as good as its execution and Daraz promises hassle free delivery
+                            right from the moment you order to when your package is dropped at your door. We cater to
+                            both major and smaller cities alike, and give you the choice to track your package as it
+                            makes its way to you so you always know your order status. If you are unsatisfied with any
+                            aspect of your order, we have a simple 7-day return or exchange policy.
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Payment Options to Suit Every Style</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            You can choose to pay through a credit/debit card, opt for cash on delivery or even go for
+                            EMI (easy monthly instalments). You can also
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-sm leading-relaxed mb-4">
+                            avail exclusive offers by downloading Daraz Wallet – a closed loop digital wallet that
+                            offers you a secure, easy way to make payments. We also have easypaisa & jazzcash payment
+                            method for our customers' ease
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Shop from Verified Vendors</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Daraz understands that online shopping in Pakistan comes with its fair share of risks. This
+                            is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from
+                            verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now
+                            you’ll never have to second guess authenticity because Daraz makes sure to do it for you!
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Shop Around the World with Daraz Global Collection
+                        </h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            International sellers and local convenience come together with Daraz Global collection. Get
+                            the chance to shop online from vendors around the world without leaving the Daraz website.
+                            Featuring thousands of novelty gadgets and accessories, Daraz Global Collection offers you a
+                            selection of products that you won’t find anywhere else when you’re online shopping in
+                            Pakistan.
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Avail Exclusive Discounts, Offers, and Promotions
+                        </h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Online shopping with Daraz means you get the chance to avail exclusive online-only
+                            promotional packages as well as discount vouchers from our vendors when you shop from their
+                            pages. Our flash sales give you customized product offers all curated with the help of our
+                            advanced AI technology so you always have deals you’ll actually be interested in!
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Buy Value, not Just Goods with Daraz Care</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Daraz does not just cater online shopping in Pakistan but also aims to simplify the way you
+                            give back to society. With charities spanning across sectors of education, health care,
+                            environmental preservation, and shelters, you can choose to make a big difference with a
+                            few, simple clicks.
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Simplify Corporate Purchases</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Who says corporate purchases need to be a complicated affair? When you opt for Daraz
+                            Corporate, you get an efficient and transparent solution for your business’ bulk purchasing
+                            needs. We’re proud to be working with some of the most prestigious organizations in Pakistan
+                            across a number of different industries.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-sm leading-relaxed mb-4">
+                            avail exclusive offers by downloading Daraz Wallet – a closed loop digital wallet that
+                            offers you a secure, easy way to make payments. We also have easypaisa & jazzcash payment
+                            method for our customers' ease
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Shop from Verified Vendors</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Daraz understands that online shopping in Pakistan comes with its fair share of risks. This
+                            is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from
+                            verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now
+                            you’ll never have to second guess authenticity because Daraz makes sure to do it for you!
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Shop Around the World with Daraz Global Collection
+                        </h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            International sellers and local convenience come together with Daraz Global collection. Get
+                            the chance to shop online from vendors around the world without leaving the Daraz website.
+                            Featuring thousands of novelty gadgets and accessories, Daraz Global Collection offers you a
+                            selection of products that you won’t find anywhere else when you’re online shopping in
+                            Pakistan.
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Avail Exclusive Discounts, Offers, and Promotions
+                        </h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Online shopping with Daraz means you get the chance to avail exclusive online-only
+                            promotional packages as well as discount vouchers from our vendors when you shop from their
+                            pages. Our flash sales give you customized product offers all curated with the help of our
+                            advanced AI technology so you always have deals you’ll actually be interested in!
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Buy Value, not Just Goods with Daraz Care</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Daraz does not just cater online shopping in Pakistan but also aims to simplify the way you
+                            give back to society. With charities spanning across sectors of education, health care,
+                            environmental preservation, and shelters, you can choose to make a big difference with a
+                            few, simple clicks.
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Simplify Corporate Purchases</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Who says corporate purchases need to be a complicated affair? When you opt for Daraz
+                            Corporate, you get an efficient and transparent solution for your business’ bulk purchasing
+                            needs. We’re proud to be working with some of the most prestigious organizations in Pakistan
+                            across a number of different industries.
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class="text-sm leading-relaxed mb-4">
+                            avail exclusive offers by downloading Daraz Wallet – a closed loop digital wallet that
+                            offers you a secure, easy way to make payments. We also have easypaisa & jazzcash payment
+                            method for our customers' ease
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Shop from Verified Vendors</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Daraz understands that online shopping in Pakistan comes with its fair share of risks. This
+                            is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from
+                            verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now
+                            you’ll never have to second guess authenticity because Daraz makes sure to do it for you!
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Shop Around the World with Daraz Global Collection
+                        </h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            International sellers and local convenience come together with Daraz Global collection. Get
+                            the chance to shop online from vendors around the world without leaving the Daraz website.
+                            Featuring thousands of novelty gadgets and accessories, Daraz Global Collection offers you a
+                            selection of products that you won’t find anywhere else when you’re online shopping in
+                            Pakistan.
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Avail Exclusive Discounts, Offers, and Promotions
+                        </h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Online shopping with Daraz means you get the chance to avail exclusive online-only
+                            promotional packages as well as discount vouchers from our vendors when you shop from their
+                            pages. Our flash sales give you customized product offers all curated with the help of our
+                            advanced AI technology so you always have deals you’ll actually be interested in!
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Buy Value, not Just Goods with Daraz Care</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Daraz does not just cater online shopping in Pakistan but also aims to simplify the way you
+                            give back to society. With charities spanning across sectors of education, health care,
+                            environmental preservation, and shelters, you can choose to make a big difference with a
+                            few, simple clicks.
+                        </p>
+                        <h1 class="font-bold text-sm text-gray-500">Simplify Corporate Purchases</h1>
+                        <p class="text-sm leading-relaxed mb-3">
+                            Who says corporate purchases need to be a complicated affair? When you opt for Daraz
+                            Corporate, you get an efficient and transparent solution for your business’ bulk purchasing
+                            needs. We’re proud to be working with some of the most prestigious organizations in Pakistan
+                            across a number of different industries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white py-10">
+            <div class="container block mx-auto xl:px-24 px-6 lg:flex">
+                <div class="">
+                    <div>
+                        <p>Daraz International</p>
+                    </div>
+                    <div class="grid md:grid-cols-5 grid-cols-3 gap-2 my-2">
+                        <div class="flex gap-1 py-2">
+                            <img src="photos/pakistan.png" class="w-6" alt="" srcset="">
+                            <div>
+                                <p>Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 py-2">
+                            <img src="photos/bang.png" class="w-6" alt="" srcset="">
+                            <p>Bangladesh</p>
+                        </div>
+                        <div class="flex gap-1 py-2">
+                            <img src="photos/sri.png" class="w-6" alt="" srcset="">
+                            <p>SriLanka</p>
+                        </div>
+                        <div class="flex gap-1 py-2">
+                            <img src="photos/my.png" class="w-6" alt="" srcset="">
+                            <p>Myanmar</p>
+                        </div>
+                        <div class="flex  py-2">
+                            <img src="photos/nepal.png" class="w-6" alt="" srcset="">
+                            <p>Nepal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div>
+                        <p>Follow Us</p>
+                    </div>
+                    <div class="grid md:grid-cols-5 grid-cols-3  gap-6 my-2">
+                        <div class="py-2">
+                            <img src="photos/facebook.png" class="w-6" alt="">
+                        </div>
+                        <div class="py-2">
+                            <img src="photos/twiter.png" class="w-6" alt="">
+                        </div>
+                        <div class="py-2">
+                            <img src="photos/instgram.png" class="w-6" alt="">
+                        </div>
+                        <div class="py-2">
+                            <img src="photos/youtube.png" class="w-6" alt="">
+                        </div>
+                        <div class="py-2">
+                            <img src="photos/net.png" class="w-6" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script>
+        $('.responsive').slick({
+            dots: true,
+            // arrows:false,
+            infinite: true,
+            // autoplay:true,   
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+</body>
+
+</html>
